@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en"></html>
+ <header>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="styles.css" rel="stylesheet"/>
 <h1 id="title">Survey Form</h1>
 <p id="description">Help protect human rights. Thank you for your time!</p>
+ </header>
+
 <form id="survey-form">
     <label id="name-label" for="name">Name</label>
     <input 
     id="name" 
     type="text"
-    placeholder="Juan Dela Cruz"
+    placeholder="eg.Juan Dela Cruz"
     required
     />
     <label id="email-label" for="email">Email</label>
@@ -15,7 +21,7 @@
     id="email" 
     type="email"
     name="email"
-    placeholder="you@example.com"
+    placeholder="eg.you@example.com"
     required
     />
     <label id="number-label" for="number">Enter your Age</label>
@@ -36,6 +42,7 @@
         <input type="radio" name="sex" value="female">Female
     </label>
 
+    <p>Religion</p>
     <select name="dropdown" id="dropdown">
         <option value="option 1">Roman Catholic</option>
         <option value="option 2">Islam</option>
@@ -44,45 +51,45 @@
         <option value="option 5">Others</option>
     </select>
 
-    <p>1. Which human rights issues are you most concerned about?</p>
+    <p>1. Which human rights issues are you most concerned about?(Select all that applies)</p>
     <label>
-        <input type="checkbox" value="option 1" name="Q1O1">Freedom of Speech
-        <input type="checkbox" value="option 2" name="Q1O2">Discrimination and inequality
-        <input type="checkbox" value="option 3" name="Q1O3">Child protection
-        <input type="checkbox" value="option 4" name="Q1O4">Gender based violence
-        <input type="checkbox" value="option 5" name="Q1O5">Privacy and data protection
-        <input type="checkbox" value="option 6" name="Q1O6">Access to education
-        <input type="checkbox" value="option 7" name="Q1O7">Access to healthcare
-        <input type="checkbox" value="option 8" name="Q1O8">Labor rights and fair wages
+        <div class="option"> <input type="checkbox" value="option 1" name="Q1O1">Freedom of Speech </div>
+        <div class="option"> <input type="checkbox" value="option 2" name="Q1O2">Discrimination and inequality </div>
+        <div class="option"> <input type="checkbox" value="option 3" name="Q1O3">Child protection </div>
+        <div class="option"> <input type="checkbox" value="option 4" name="Q1O4">Gender based violence </div>
+        <div class="option"> <input type="checkbox" value="option 5" name="Q1O5">Privacy and data protection </div>
+        <div class="option"> <input type="checkbox" value="option 6" name="Q1O6">Access to education </div>
+        <div class="option"> <input type="checkbox" value="option 7" name="Q1O7">Access to healthcare </div>
+        <div class="option"> <input type="checkbox" value="option 8" name="Q1O8">Labor rights and fair wages </div>
             </label>
 
-    <p>2. In what ways are you willing to participate in protectiong human rights?</p>
+    <p>2. In what ways are you willing to participate in protectiong human rights?(Select all that applies)</p>
     <label>
-        <input type="checkbox" value="option 1" name="Q2O1">Signing petitions
-        <input type="checkbox" value="option 2"name="Q2O2">Attending awareness campaigns
-        <input type="checkbox" value="option 3"name="Q2O3">Donating to human rights organizations
-        <input type="checkbox" value="option 4"name="Q2O4">Sharing educational content
-        <input type="checkbox" value="option 5"name="Q2O5">Volounteering for community programs
-        <input type="checkbox" value="option 6"name="Q2O6">Reporting human rights violations
+        <div class="option"> <input type="checkbox" value="option 1" name="Q2O1">Signing petitions </div>
+        <div class="option"> <input type="checkbox" value="option 2"name="Q2O2">Attending awareness campaigns </div>
+        <div class="option"> <input type="checkbox" value="option 3"name="Q2O3">Donating to human rights organizations </div>
+        <div class="option"> <input type="checkbox" value="option 4"name="Q2O4">Sharing educational content </div>
+        <div class="option"> <input type="checkbox" value="option 5"name="Q2O5">Volounteering for community programs </div>
+        <div class="option"> <input type="checkbox" value="option 6"name="Q2O6">Reporting human rights violations </div>
     </label>
     
-    <p>3. What types of suppport do you think communities need the most?</p>
+    <p>3. What types of suppport do you think communities need the most?(Select all that applies)</p>
     <label>
-        <input type="checkbox" value="option 1"name="Q3O1">Legal assistance
-        <input type="checkbox" value="option 2"name="Q3O2">Mental health support
-        <input type="checkbox" value="option 3"name="Q3O3">Financial aid
-        <input type="checkbox" value="option 4"name="Q3O4">Educational programs and workshops
-        <input type="checkbox" value="option 5"name="Q3O5">Safe spaces/shelters
-        <input type="checkbox" value="option 6"name="Q3O6">Government transparancy and accountability
+        <div class="option"> <input type="checkbox" value="option 1"name="Q3O1">Legal assistance </div>
+        <div class="option"> <input type="checkbox" value="option 2"name="Q3O2">Mental health support </div>
+        <div class="option"> <input type="checkbox" value="option 3"name="Q3O3">Financial aid </div>
+        <div class="option"> <input type="checkbox" value="option 4"name="Q3O4">Educational programs and workshops </div>
+        <div class="option"> <input type="checkbox" value="option 5"name="Q3O5">Safe spaces/shelters </div>
+        <div class="option"> <input type="checkbox" value="option 6"name="Q3O6">Government transparancy and accountability </div>
     </label>
-    <p>4. How do you prefer to receive information about human rights?</p>
+    <p>4. How do you prefer to receive information about human rights?(Select all that applies)</p>
         <label>
-            <input type="checkbox" value="option 1"name="Q4O1">Social media posts
-            <input type="checkbox" value="option 2"name="Q4O2">News articles
-            <input type="checkbox" value="option 3"name="Q4O3">School or community workshops
-            <input type="checkbox" value="option 4 "name="Q4O4">Government announcements
-            <input type="checkbox" value="option 5"name="Q4O5">Online videos or documentaries
-            <input type="checkbox" value="option 6"name="Q4O6">Podcasts or radio programs
+            <div class="option"> <input type="checkbox" value="option 1"name="Q4O1">Social media posts </div>
+            <div class="option"> <input type="checkbox" value="option 2"name="Q4O2">News articles </div>
+            <div class="option"> <input type="checkbox" value="option 3"name="Q4O3">School or community workshops </div>
+            <div class="option"> <input type="checkbox" value="option 4 "name="Q4O4">Government announcements </div>
+            <div class="option"> <input type="checkbox" value="option 5"name="Q4O5">Online videos or documentaries </div>
+            <div class="option"> <input type="checkbox" value="option 6"name="Q4O6">Podcasts or radio programs </div>
         </label>
 
         <p>If you have any inquiries or comments you want to add, you can place them in the textbox below.</p>
