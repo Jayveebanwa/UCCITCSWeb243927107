@@ -1,0 +1,47 @@
+#header-img {
+    width: 120px;
+    height: auto;
+    display: block;
+    background-color: transparent;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: aquamarine;
+}
+
+#nav-link {
+    text-decoration: none;
+    color: #fff;
+    font: bold;
+}
+
+#nav-link Li a {
+    text-decoration: none;
+    color: #333;
+    font: bold;
+}
+
+#nav-link Li a:hover {
+    color:aquamarine;
+}
+
+body {
+    background-image: url(https://shopee.ph/product/427108660/22052705262?utm_term=SP_Search_Shopping_Homeliving_All_L1Homeliving&utm_campaign=H07_ALL_PIN_SHOPPING_SP_Search_All_Homeliving_All-API&item_id=22052705262&utm_medium=cpc&utm_source=Pinterest&utm_content=4260609460980&pp=0);
+
+    
+}
+
+@media (max-width:760px) {
+    body {
+        background-color: azure;
+    }
+}
+
+nav ul {
+    flex-direction: column;
+    display: flex;
+}
