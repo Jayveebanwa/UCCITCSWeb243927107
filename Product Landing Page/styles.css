@@ -3,45 +3,74 @@
     height: auto;
     display: block;
     background-color: transparent;
+    border-width: 10px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: aquamarine;
-}
+    background-color: #3b4752 ;
+    width: 100%;
+    padding: 10px 30px;
+    box-sizing: border-box;
 
-#nav-link {
-    text-decoration: none;
-    color: #fff;
-    font: bold;
-}
 
-#nav-link Li a {
-    text-decoration: none;
-    color: #333;
-    font: bold;
-}
-
-#nav-link Li a:hover {
-    color:aquamarine;
-}
-
-body {
-    background-image: url(https://shopee.ph/product/427108660/22052705262?utm_term=SP_Search_Shopping_Homeliving_All_L1Homeliving&utm_campaign=H07_ALL_PIN_SHOPPING_SP_Search_All_Homeliving_All-API&item_id=22052705262&utm_medium=cpc&utm_source=Pinterest&utm_content=4260609460980&pp=0);
-
+    position: sticky;
+    top: 0;
+    border: black;
+    border-radius: 5px;
     
 }
 
-@media (max-width:760px) {
+nav {
+    flex-direction: row;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: whitesmoke;
+    font: bold;
+    transition: color 0.3s;
+    font-size: 30px;
+}
+
+.nav-link:hover {
+    color:rgb(245, 248, 247);
+}
+
+body {
+    background-image: url(https://www.simplotfoods.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F0dkgxhks0leg%2F4LaYoCoepR6ZwEkAmQFh2F%2Fe82fa8e3c87f0e4cdb3e914b3e766fa0%2Fblog-large-2020veg.jpg%3Ffm%3Dwebp&w=1920&q=75);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;          
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: -1;               
+}
+
+@media (max-width: 760px) {
     body {
-        background-color: azure;
+        background-color: rgb(227, 181, 81);
+    }
+    nav { 
+        flex-direction: row;
+        gap: 10px;
     }
 }
 
-nav ul {
-    flex-direction: column;
-    display: flex;
+#company {
+    font-size: 60px;
+    font-weight: bold;
 }
