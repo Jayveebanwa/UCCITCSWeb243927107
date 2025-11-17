@@ -1,3 +1,22 @@
+#company {
+    color: #Bed24d;
+}
+
+#intro {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+#banner {
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(22, 45, 0, 0.5) ;
+    align-items: center;
+    margin-left: 0px;
+    border-radius: 15px;
+}
 #header-img {
     width: 120px;
     height: auto;
@@ -10,17 +29,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3b4752 ;
+    background-color: #162D00 ;
     width: 100%;
-    padding: 10px 30px;
+    padding: 0px 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     box-sizing: border-box;
-
 
     position: sticky;
     top: 0;
     border: black;
     border-radius: 5px;
-    
 }
 
 nav {
@@ -31,10 +50,13 @@ nav {
 
 .nav-link {
     text-decoration: none;
-    color: whitesmoke;
+    color:  #Bed24d;
     font: bold;
     transition: color 0.3s;
-    font-size: 30px;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .nav-link:hover {
@@ -42,11 +64,12 @@ nav {
 }
 
 body {
-    background-image: url(https://www.simplotfoods.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F0dkgxhks0leg%2F4LaYoCoepR6ZwEkAmQFh2F%2Fe82fa8e3c87f0e4cdb3e914b3e766fa0%2Fblog-large-2020veg.jpg%3Ffm%3Dwebp&w=1920&q=75);
+    background-image: url(background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    color: #ecff83;
 }
 
 body::before {
@@ -71,6 +94,67 @@ body::before {
 }
 
 #company {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
+    padding-left: 10px;
+    text-align: left;
+}
+
+section {
+    width: 80%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
+}
+
+.product-video {
+    width: 50%;
+    padding-left: 30px;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+
+#product-img {
+    width: 400px;
+    height: auto;
+    padding-bottom: 30px;
+}
+h1 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+h2 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+div, p {
+    font-size: 18px;
+}
+
+#Premium-Basket, #Normal-Basket, #Budget-Basket, #outro {
+    padding: 10px;
+    padding-left: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(22, 45, 0, 0.8) ;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    align-items: center;
+    margin-left: 50px;
+}
+
+input { 
+    size: 20%;
+}
+
+.credit {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-top: 30px;
+    padding: 15px;
 }
