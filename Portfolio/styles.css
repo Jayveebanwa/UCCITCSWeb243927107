@@ -1,0 +1,10 @@
+body {
+    background-color: aqua;
+}
+#container {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: auto;
+}
